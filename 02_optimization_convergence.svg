@@ -1,0 +1,28 @@
+<svg viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e24; font-family:sans-serif;">
+        <text x="425.0" y="32" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ShadowTune - Active Learning Optimization Convergence</text>
+        <rect x="65" y="50" width="745" height="335" fill="#16161a" stroke="#444" stroke-width="1"/>
+        
+        <text x="22" y="225.0" fill="#ddd" font-size="13" font-weight="bold" text-anchor="middle" transform="rotate(-90, 22, 225.0)">Composite Cost J</text>
+        <text x="57" y="389.0" fill="#aaa" font-size="11" text-anchor="end">0.0</text>
+        <text x="57" y="199.39810737692855" fill="#aaa" font-size="11" text-anchor="end">0.5</text>
+        <text x="57" y="9.7962147538571" fill="#aaa" font-size="11" text-anchor="end">1.0</text>
+
+        <text x="437.5" y="435" fill="#ddd" font-size="13" font-weight="bold" text-anchor="middle">Active Learning Iteration</text>
+        <text x="127.08333333333333" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 4</text><text x="251.25" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 5</text><text x="375.4166666666667" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 6</text><text x="499.58333333333337" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 7</text><text x="623.75" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 8</text><text x="747.9166666666666" y="405" fill="#aaa" font-size="11" text-anchor="middle">Iter 9</text>
+
+        <polyline points="127.1,158.0 251.2,149.9 375.4,151.4 499.6,93.7 623.8,107.0 747.9,132.9" fill="none" stroke="#29b6f6" stroke-width="2.5" stroke-dasharray="4,3"/>
+        <polyline points="127.1,282.9 251.2,158.0 375.4,296.8 499.6,293.6 623.8,304.5 747.9,308.7" fill="none" stroke="#66bb6a" stroke-width="3"/>
+
+        <circle cx="127.08333333333333" cy="158.00861415165883" r="4.5" fill="#29b6f6"/><circle cx="251.25" cy="149.8557327688668" r="4.5" fill="#29b6f6"/><circle cx="375.4166666666667" cy="151.4483886669006" r="4.5" fill="#29b6f6"/><circle cx="499.58333333333337" cy="93.69565217391303" r="4.5" fill="#29b6f6"/><circle cx="623.75" cy="107.00570503605266" r="4.5" fill="#29b6f6"/><circle cx="747.9166666666666" cy="132.86740318983956" r="4.5" fill="#29b6f6"/>
+        <rect x="122.58333333333333" y="278.41834101173833" width="9" height="9" fill="#66bb6a"/><rect x="246.75" y="153.54653453018346" width="9" height="9" fill="#66bb6a"/><rect x="370.9166666666667" y="292.2592791732226" width="9" height="9" fill="#66bb6a"/><rect x="495.08333333333337" y="289.1498081342042" width="9" height="9" fill="#66bb6a"/><rect x="619.25" y="299.9571160137192" width="9" height="9" fill="#66bb6a"/><rect x="743.4166666666666" y="304.16627802995146" width="9" height="9" fill="#66bb6a"/>
+        
+        <circle cx="747.9166666666666" cy="308.66627802995146" r="11" fill="#ffd700" stroke="#fff" stroke-width="2.5"/>
+        <rect x="607.9166666666666" y="263.66627802995146" width="280" height="30" fill="#262b36" stroke="#ffd700" stroke-width="1.5" rx="5"/>
+        <text x="747.9166666666666" y="283.66627802995146" fill="#ffd700" font-size="12" font-weight="bold" text-anchor="middle">★ Min Cost: 0.2013 (Iter 9: Kp=6.03, Ki=125.4)</text>
+
+        <rect x="550" y="65" width="245" height="60" fill="#1e1e24" stroke="#555" rx="5"/>
+        <line x1="565" y1="83" x2="590" y2="83" stroke="#29b6f6" stroke-width="2.5" stroke-dasharray="4,3"/>
+        <text x="600" y="87" fill="#29b6f6" font-size="12">GP Predicted Cost</text>
+        <line x1="565" y1="105" x2="590" y2="105" stroke="#66bb6a" stroke-width="3"/>
+        <text x="600" y="109" fill="#66bb6a" font-size="12">Digital Twin Actual Cost</text>
+    </svg>

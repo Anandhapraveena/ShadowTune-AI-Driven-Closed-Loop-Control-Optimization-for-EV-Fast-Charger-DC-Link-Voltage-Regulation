@@ -1,0 +1,62 @@
+[
+  {
+    "requirement": "DC-link plant simulation",
+    "status": "PRESENT",
+    "detail": "Verified non-linear DC bus dynamics with ESR & PWM"
+  },
+  {
+    "requirement": "Manual PI baseline",
+    "status": "PRESENT",
+    "detail": "Evaluated 3 reference baseline gain configurations"
+  },
+  {
+    "requirement": "Gaussian Process optimisation",
+    "status": "PRESENT",
+    "detail": "GPR ARD kernel predicts mean cost and epistemic uncertainty"
+  },
+  {
+    "requirement": "Digital Twin",
+    "status": "PRESENT (CORRECTED)",
+    "detail": "RLS parameter estimation applied to eliminate model mismatch"
+  },
+  {
+    "requirement": "Bounded PI gains",
+    "status": "PRESENT",
+    "detail": "Strict limits enforced: Kp \u2208 [0.05, 12.0], Ki \u2208 [1.0, 200.0]"
+  },
+  {
+    "requirement": "Confidence-based candidate screening",
+    "status": "PRESENT",
+    "detail": "Filters excessive epistemic uncertainty (\u03c3 > 1.60)"
+  },
+  {
+    "requirement": "RLS parameter estimation",
+    "status": "PRESENT",
+    "detail": "Estimates C_dc=1760.0uF (err 0.00%), ESR=80.0m\u03a9 (err 0.00%) online"
+  },
+  {
+    "requirement": "Automatic fallback and rollback",
+    "status": "PRESENT",
+    "detail": "Reverts to certified safe gains on fault/instability"
+  },
+  {
+    "requirement": "Rate-limited gain updates",
+    "status": "PRESENT",
+    "detail": "Enforces slew rate limit (Kp: 1.0 -> 1.20 in 10ms, prevents spikes)"
+  },
+  {
+    "requirement": "Complete audit logging",
+    "status": "PRESENT",
+    "detail": "Immutable SHA-256 hash-chained ledger with verified integrity"
+  },
+  {
+    "requirement": "Grid-voltage sag and parameter variation",
+    "status": "DEMONSTRATED",
+    "detail": "Tested under 20% grid voltage sag & -20% C_dc degradation"
+  },
+  {
+    "requirement": "Sensor-noise testing",
+    "status": "DEMONSTRATED",
+    "detail": "Tested under Gaussian sensor noise (\u03c3=0.5V) & 0.1V ADC quantization"
+  }
+]

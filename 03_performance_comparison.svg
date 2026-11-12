@@ -1,0 +1,60 @@
+<svg viewBox="0 0 850 500" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e24; font-family:sans-serif;">
+        <text x="425.0" y="32" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">Initial vs ShadowTune Optimized PI Performance (Iter 9)</text>
+        
+        <g transform="translate(45, 60)">
+            <rect width="370" height="180" fill="#16161a" stroke="#333" rx="8"/>
+            <text x="15" y="28" fill="#fff" font-size="14" font-weight="bold">Voltage Undershoot / Sag</text>
+            <rect x="240" y="12" width="115" height="24" fill="#00e676" rx="12"/>
+            <text x="298" y="28" fill="#121212" font-size="11" font-weight="bold" text-anchor="middle">-87.6% Reduction</text>
+            
+            <text x="15" y="70" fill="#bbb" font-size="12">Initial PI:</text>
+            <rect x="90" y="56" width="200.0" height="18" fill="#ff5252" rx="3"/>
+            <text x="298.0" y="70" fill="#ff5252" font-size="12" font-weight="bold">10.42 %</text>
+
+            <text x="15" y="115" fill="#bbb" font-size="12">Iter 9 Opt:</text>
+            <rect x="90" y="101" width="24.752950206274583" height="18" fill="#00e676" rx="3"/>
+            <text x="122.75295020627459" y="115" fill="#00e676" font-size="12" font-weight="bold">1.29 %</text>
+        </g>
+        <g transform="translate(435, 60)">
+            <rect width="370" height="180" fill="#16161a" stroke="#333" rx="8"/>
+            <text x="15" y="28" fill="#fff" font-size="14" font-weight="bold">Settling Time</text>
+            <rect x="240" y="12" width="115" height="24" fill="#00e676" rx="12"/>
+            <text x="298" y="28" fill="#121212" font-size="11" font-weight="bold" text-anchor="middle">-98.3% Reduction</text>
+            
+            <text x="15" y="70" fill="#bbb" font-size="12">Initial PI:</text>
+            <rect x="90" y="56" width="200.0" height="18" fill="#ff5252" rx="3"/>
+            <text x="298.0" y="70" fill="#ff5252" font-size="12" font-weight="bold">60.00 ms</text>
+
+            <text x="15" y="115" fill="#bbb" font-size="12">Iter 9 Opt:</text>
+            <rect x="90" y="101" width="3.3333333333333335" height="18" fill="#00e676" rx="3"/>
+            <text x="101.33333333333333" y="115" fill="#00e676" font-size="12" font-weight="bold">1.00 ms</text>
+        </g>
+        <g transform="translate(45, 270)">
+            <rect width="370" height="180" fill="#16161a" stroke="#333" rx="8"/>
+            <text x="15" y="28" fill="#fff" font-size="14" font-weight="bold">Voltage Ripple</text>
+            <rect x="240" y="12" width="115" height="24" fill="#00e676" rx="12"/>
+            <text x="298" y="28" fill="#121212" font-size="11" font-weight="bold" text-anchor="middle">-84.6% Reduction</text>
+            
+            <text x="15" y="70" fill="#bbb" font-size="12">Initial PI:</text>
+            <rect x="90" y="56" width="200.0" height="18" fill="#ff5252" rx="3"/>
+            <text x="298.0" y="70" fill="#ff5252" font-size="12" font-weight="bold">4.46 V pk-pk</text>
+
+            <text x="15" y="115" fill="#bbb" font-size="12">Iter 9 Opt:</text>
+            <rect x="90" y="101" width="30.727883538633822" height="18" fill="#00e676" rx="3"/>
+            <text x="128.72788353863382" y="115" fill="#00e676" font-size="12" font-weight="bold">0.69 V pk-pk</text>
+        </g>
+        <g transform="translate(435, 270)">
+            <rect width="370" height="180" fill="#16161a" stroke="#333" rx="8"/>
+            <text x="15" y="28" fill="#fff" font-size="14" font-weight="bold">Integral Absolute Error</text>
+            <rect x="240" y="12" width="115" height="24" fill="#00e676" rx="12"/>
+            <text x="298" y="28" fill="#121212" font-size="11" font-weight="bold" text-anchor="middle">-92.5% Reduction</text>
+            
+            <text x="15" y="70" fill="#bbb" font-size="12">Initial PI:</text>
+            <rect x="90" y="56" width="200.0" height="18" fill="#ff5252" rx="3"/>
+            <text x="298.0" y="70" fill="#ff5252" font-size="12" font-weight="bold">1.60 V*s</text>
+
+            <text x="15" y="115" fill="#bbb" font-size="12">Iter 9 Opt:</text>
+            <rect x="90" y="101" width="14.994377108584281" height="18" fill="#00e676" rx="3"/>
+            <text x="112.99437710858427" y="115" fill="#00e676" font-size="12" font-weight="bold">0.12 V*s</text>
+        </g>
+    </svg>
