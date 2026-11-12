@@ -1,0 +1,2 @@
+# ShadowTune-AI-Driven-Closed-Loop-Control-Optimization-for-EV-Fast-Charger-DC-Link-Voltage-Regulation
+ShadowTune is an AI-driven, safety constrained PI controller optimization framework for EV fast-charger DC-link voltage regulation. It combines Gaussian Process regression, active learning, constrained optimization, and digital twin simulation to identify optimal PI gains and improve voltage response under load disturbances.
