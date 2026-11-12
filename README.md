@@ -2,7 +2,7 @@
 
 ### AI-Driven, Safety-Constrained PI Controller Optimization
 
-ShadowTune is an intelligent, Python-based optimization framework for EV fast-charger DC-link voltage regulation. It combines **Gaussian Process Regression, Active Learning, Constrained Optimization, and Digital Twin Simulation** to intelligently identify effective PI controller gains (\(K_p,K_i\)).
+ShadowTune is an intelligent, Python-based optimization framework for EV fast-charger DC-link voltage regulation. It combines **Gaussian Process Regression, Active Learning, Constrained Optimization, and Digital Twin Simulation** to intelligently identify effective PI controller gains (\(Kp,Ki\)).
 
 Unlike conventional trial-and-error tuning, ShadowTune learns from previous simulation results, predicts the performance of new gain combinations, estimates uncertainty, and selects promising candidates while respecting predefined safety constraints.
 
