@@ -1,49 +1,75 @@
-# ShadowTune Gaussian Process Optimization Module
+# ShadowTune ⚡
 
-A specialized, safety-constrained Gaussian Process (GP) active learning and Bayesian optimization module for tuning PI controller gains ($K_p$, $K_i$) regulating DC-link voltage in power converters and electric drive systems.
+### AI-Driven, Safety-Constrained PI Controller Optimization
 
----
+ShadowTune is an intelligent, Python-based optimization framework for EV fast-charger DC-link voltage regulation. It combines **Gaussian Process Regression, Active Learning, Constrained Optimization, and Digital Twin Simulation** to intelligently identify effective PI controller gains (\(K_p,K_i\)).
 
-## 1. What the Solution Does
+Unlike conventional trial-and-error tuning, ShadowTune learns from previous simulation results, predicts the performance of new gain combinations, estimates uncertainty, and selects promising candidates while respecting predefined safety constraints.
 
-In power converter DC-link regulation (e.g. Active Front End rectifiers, EV motor drives, grid-tied solar/wind inverters):
-- Evaluating arbitrary gains directly on physical equipment risks **overvoltage trips, capacitor dielectric stress, and converter instability**.
-- Running exhaustive grid searches in high-fidelity switching digital twins (transient ODEs, PLECS, Simulink) is **computationally slow and resource-heavy**.
+## Intelligent AI Capabilities
 
-This module solves the problem through **Safety-Constrained Active Learning**:
-1. **Learns from Historical Tests**: Trains Gaussian Process surrogates on past $(K_p, K_i)$ trials and their measured DC-link performance.
-2. **Predicts Untested Gains & Epistemic Uncertainty**: Computes mean predicted response $\mu(K_p, K_i)$ and posterior standard deviation $\sigma(K_p, K_i)$.
-3. **Multi-Objective Cost Formulation**: Jointly optimizes:
-   - **Voltage Overshoot ($M_p$)**
-   - **Settling Time ($t_s$)**
-   - **Voltage Ripple ($\Delta V_{ripple}$)**
-   - **Integral Absolute Error (IAE)**
-4. **Safety & Confidence Gating**:
-   - Rejects gains predicted to violate voltage overshoot, ripple, or settling limits.
-   - Rejects gains with **excessive prediction uncertainty** ($\sigma > \sigma_{threshold}$).
-5. **Continuous Model Updating**: Automatically incorporates each digital twin evaluation into the GP memory, refining accuracy and pruning search spaces over time.
+- **Learning:** Gaussian Process Regression learns the relationship between PI gains and controller performance.
+- **Prediction:** Estimates expected optimization cost and prediction uncertainty.
+- **Decision-Making:** Active Learning selects promising candidates for evaluation.
+- **Safety-Aware Optimization:** Rejects candidates that violate predefined safety limits.
+- **Adaptive Feedback:** Uses digital-twin simulation results to improve subsequent optimization decisions.
 
----
+## Key Features
 
-## 2. File Structure
+- AI-driven PI gain optimization
+- Gaussian Process-based performance prediction
+- Uncertainty-aware candidate selection
+- Safety-constrained optimization
+- Digital twin simulation of DC-link voltage response
+- Performance evaluation and visualization
+- Audit logging and verification utilities
 
+## Project Structure
+
+```text
+ShadowTune/
+│
+├── acquisition.py
+├── audit_log.py
+├── challenge_scorecard.json
+├── demo.py
+├── digital_twin_simulator.py
+├── generate_word_doc.py
+├── gp_model.py
+├── rls_estimator.py
+├── run_complete_summary.py
+├── safety_constraints.py
+├── shadowtune_optimizer.py
+├── verify_all_requirements.py
+├── visualize_output.py
+│
+├── shadowtune_graphs/
+├── README.md
+└── .gitignore
 ```
-shadowtune_gp_optimizer/
-├── gp_model.py                # Pure-Python Gaussian Process Regressor with ARD kernel and Cholesky solver
-├── safety_constraints.py      # Hard electrical thresholds & uncertainty rejection gating
-├── digital_twin_simulator.py  # Physics-based DC-link converter simulation model
-├── acquisition.py             # Constrained Lower Confidence Bound (cLCB) prioritizer
-├── shadowtune_optimizer.py    # Master coordinator managing active learning loop
-├── demo.py                    # Runnable end-to-end verification and performance report
-└── README.md                  # System architecture and integration documentation
-```
 
----
+## Technologies Used
 
-## 3. How to Run the Demo
+Python | Machine Learning | Gaussian Processes | Active Learning | Digital Twins | Control Systems
 
-From the project directory:
+## Execution
+
+Run the main demonstration:
+
 ```bash
 python3 demo.py
 ```
-*(No external third-party dependencies required. Compatible with Python 3.9+)*
+
+Generate visualizations:
+
+```bash
+python3 visualize_output.py
+```
+
+## Project Goal
+
+To develop an intelligent, adaptive, and safety-aware optimization framework that improves PI controller tuning for EV fast-charging applications.
+
+**Implementation Status:** Currently demonstrated through software-based digital-twin simulation. Hardware validation is a future step.
+
+**AI Approach:** Intelligent prediction, uncertainty estimation, iterative learning, and safety-aware decision-making.
